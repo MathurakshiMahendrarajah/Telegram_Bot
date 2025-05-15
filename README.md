@@ -23,7 +23,7 @@ A fun AI-powered Telegram bot that generates jokes based on any topic you give i
 
 ## 📦 Setup Locally
 ```bash
-git clone https://github.com/yourusername/telegram-joke-bot.git
-cd telegram-joke-bot
+https://github.com/MathurakshiMahendrarajah/Telegram_Bot.git
+cd Telegram_Bot
 pip install -r requirements.txt
 python app.py
