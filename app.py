@@ -16,12 +16,12 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 
 def setup_llm_chain(topic="technology"):
     prompt = ChatPromptTemplate.from_messages([
-        ("system","You are a Joking AI. Give me only ONE funny joke on the given topic"),
+        ("system","You are a professional comedy writer. Your job is to write ONE short, clever, and funny joke on any topic the user gives. Avoid cheesy or robotic lines. Make it feel natural and witty."),
         ("user",f"generate a joke on the topic: {topic}")
     ])
 
     llm = ChatGroq(
-        model="Gemma2-9b-It",
+        model="Llama3-8b-8192",
         groq_api_key=groq_api_key
     )
 
